@@ -1,0 +1,40 @@
+﻿<SequentialScreenWorkflow Name="MILD ESCAPE 1" Uri="http://tesshi-m.web.infoseek.co.jp/escape01.html"  BasePositionDescription="Flash コンポーネントの左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <Location Name="START" Point="53,362" />
+    <Location Name="右へ移動" Point="391,85" />
+    <Location Name="金庫" Point="135,224" />
+    <Location Name="金庫1上" Point="129,206" />
+    <Location Name="金庫2下" Point="171,272" />
+    <Location Name="金庫3上" Point="213,206" />
+    <Location Name="金庫4下" Point="255,272" />
+    <Location Name="金庫OK" Point="295,238" />
+    <Location Name="ドアの鍵" Point="128,176" />
+    <Location Name="金庫から戻る" Point="365,251" />
+    <Location Name="ドアの鍵穴" Point="64,147" />
+    <Location Name="ドアノブ" Point="69,132" />
+    <Location Name="アイテム.鍵" Point="472,175" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="START" Timeout="0" />
+  <DelayActivity Timeout="1900" />
+  <ClickActivity LocationName="右へ移動" Timeout="201" />
+  <ClickActivity LocationName="右へ移動" Timeout="201" />
+  <ClickActivity LocationName="金庫" Timeout="201" />
+  <ClickActivity LocationName="金庫1上" Timeout="201" />
+  <ClickActivity LocationName="金庫1上" Timeout="201" />
+  <ClickActivity LocationName="金庫1上" Timeout="201" />
+  <ClickActivity LocationName="金庫2下" Timeout="201" />
+  <ClickActivity LocationName="金庫3上" Timeout="201" />
+  <ClickActivity LocationName="金庫3上" Timeout="201" />
+  <ClickActivity LocationName="金庫3上" Timeout="201" />
+  <ClickActivity LocationName="金庫3上" Timeout="201" />
+  <ClickActivity LocationName="金庫3上" Timeout="201" />
+  <ClickActivity LocationName="金庫4下" Timeout="201" />
+  <ClickActivity LocationName="金庫OK" Timeout="201" />
+  <ClickActivity LocationName="ドアの鍵" Timeout="201" />
+  <ClickActivity LocationName="金庫から戻る" Timeout="201" />
+  <ClickActivity LocationName="右へ移動" Timeout="201" />
+  <ClickActivity LocationName="右へ移動" Timeout="201" />
+  <ClickActivity LocationName="アイテム.鍵" Timeout="201" />
+  <ClickActivity LocationName="ドアの鍵穴" Timeout="201" />
+  <ClickActivity LocationName="ドアノブ" Timeout="201" />
+</SequentialScreenWorkflow>

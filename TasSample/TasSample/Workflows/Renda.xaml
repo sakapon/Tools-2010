@@ -1,0 +1,5 @@
+﻿<SequentialScreenWorkflow Name="THE連打" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <ForTimeActivity Duration="00:00:11">
+    <ClickActivity Timeout="1" />
+  </ForTimeActivity>
+</SequentialScreenWorkflow>

@@ -1,0 +1,12 @@
+﻿<SequentialScreenWorkflow Name="スプリンター" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <Location Name="StartButton" Point="340,220" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="StartButton" Timeout="0" />
+  <SendKeysActivity Keys="{}{LEFT}" Timeout="200" />
+  <DelayActivity Timeout="6000" />
+  <ForTimeActivity Duration="00:00:18">
+    <SendKeysActivity Keys="{}{LEFT}" Timeout="30" />
+    <SendKeysActivity Keys="{}{RIGHT}" Timeout="30" />
+  </ForTimeActivity>
+</SequentialScreenWorkflow>

@@ -1,0 +1,297 @@
+﻿<SequentialScreenWorkflow Name="脱出ゲーム" Uri="http://mixi.jp/run_appli.pl?id=6509"  BasePositionDescription="Flash コンポーネントの左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <!-- 基本座標 -->
+    <Location Name="StartButton" Point="340,220" />
+    <Location Name="CloseItemButton" Point="440,100" />
+    <Location Name="PCPoint" Point="342,206" />
+    <Location Name="DrawersPoint" Point="200,292" />
+    <Location Name="Drawer1Point" Point="220,142" />
+    <Location Name="Drawer2Point" Point="220,208" />
+    <Location Name="ClockPoint" Point="160,40" />
+    <Location Name="Doll1Point" Point="387,193" />
+    <Location Name="TouchDoll1Point" Point="254,186" />
+    <Location Name="Shelf1Point" Point="183,255" />
+    <Location Name="Shelf2Point" Point="255,255" />
+    <Location Name="Shelf3Point" Point="327,255" />
+    <Location Name="Shelf4Point" Point="399,255" />
+    <Location Name="UnderShelfPoint" Point="289,304" />
+    <Location Name="HangerPoint" Point="464,92" />
+    <Location Name="UnderSofaPoint" Point="269,352" />
+    <Location Name="BallLockPoint" Point="265,133" />
+    <Location Name="NumberLockPoint" Point="275,144" />
+    <Location Name="OpenNumberLockPoint" Point="253,191" />
+    <Location Name="RightDoorPoint" Point="378,151" />
+    <Location Name="LeftDoorPoint" Point="117,148" />
+    <Location Name="GetOutPoint" Point="282,210" />
+
+    <!-- 配列座標 -->
+    <Location Name="Othello12Point" Point="184,116" />
+    <Location Name="Othello24Point" Point="242,143" />
+    <Location Name="Othello31Point" Point="155,170" />
+    <Location Name="Othello43Point" Point="213,197" />
+    <Location Name="InputNumber1Point" Point="225,175" />
+    <Location Name="InputNumber2Point" Point="255,175" />
+    <Location Name="InputNumber3Point" Point="285,175" />
+    <Location Name="InputNumber4Point" Point="225,205" />
+    <Location Name="InputNumber5Point" Point="255,205" />
+    <Location Name="InputNumber6Point" Point="285,205" />
+    <Location Name="InputNumber7Point" Point="225,235" />
+    <Location Name="InputNumber8Point" Point="255,235" />
+    <Location Name="InputNumber9Point" Point="285,235" />
+    <Location Name="InputNumber0Point" Point="225,265" />
+    <Location Name="InputNumberCPoint" Point="285,265" />
+
+    <!-- アイテム入手座標 -->
+    <Location Name="GetBall1Point" Point="163,229" />
+    <Location Name="GetBall2Point" Point="100,232" />
+    <Location Name="GetBall3Point" Point="246,273" />
+    <Location Name="GetBall4Point" Point="304,267" />
+    <Location Name="GetBall5Point" Point="406,236" />
+    <Location Name="GetBall6Point" Point="256,208" />
+    <Location Name="GetBall7Point" Point="251,108" />
+    <Location Name="GetCard1Point" Point="0,0" />
+    <Location Name="GetCard2Point" Point="473,313" />
+    <Location Name="GetKey1Point" Point="0,0" />
+    <Location Name="GetKey2Point" Point="276,155" />
+    <Location Name="GetKey3Point" Point="130,265" />
+    <Location Name="GetKey4Point" Point="0,0" />
+    <Location Name="GetMemo1Point" Point="0,0" />
+
+    <!-- アイテム使用座標 -->
+    <Location Name="SetBall11Point" Point="214,141" />
+    <Location Name="SetBall12Point" Point="255,141" />
+    <Location Name="SetBall13Point" Point="296,141" />
+    <Location Name="SetBall14Point" Point="337,141" />
+    <Location Name="SetBall21Point" Point="214,181" />
+    <Location Name="SetBall22Point" Point="255,181" />
+    <Location Name="SetBall23Point" Point="296,181" />
+    <Location Name="SetBall24Point" Point="337,181" />
+    <Location Name="SetBall31Point" Point="214,221" />
+    <Location Name="SetBall32Point" Point="255,221" />
+    <Location Name="SetBall33Point" Point="296,221" />
+    <Location Name="SetBall34Point" Point="337,221" />
+    <Location Name="SetBall41Point" Point="214,261" />
+    <Location Name="SetBall42Point" Point="255,261" />
+    <Location Name="SetBall43Point" Point="296,261" />
+    <Location Name="SetBall44Point" Point="337,261" />
+    <Location Name="SetCard2Point" Point="133,292" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="StartButton" Timeout="0" />
+  <DelayActivity Timeout="2400" />
+  <ForTimeActivity Duration="00:00:02.8">
+    <SendKeysActivity Keys="{}{LEFT}" Timeout="10" />
+  </ForTimeActivity>
+  <ForCountActivity RepeatCount="3">
+    <ClickActivity LocationName="Doll1Point" Timeout="202" />
+    <ClickActivity LocationName="TouchDoll1Point" Timeout="201" />
+    <SendKeysActivity Keys="{}{DOWN}" Timeout="300" />
+  </ForCountActivity>
+  <ClickActivity LocationName="Shelf4Point" Timeout="201" />
+  <ClickActivity LocationName="Shelf4Point" Timeout="201" />
+  <ClickActivity LocationName="GetKey2Point" Timeout="201" />
+  <ForTimeActivity Duration="00:00:05.7">
+    <SetCursorPositionActivity Timeout="35" Point="280,155" />
+    <SetCursorPositionActivity Timeout="35" Point="300,170" />
+    <SetCursorPositionActivity Timeout="35" Point="305,145" />
+    <SetCursorPositionActivity Timeout="35" Point="279,249" />
+    <SetCursorPositionActivity Timeout="35" Point="255,135" />
+    <SetCursorPositionActivity Timeout="35" Point="285,120" />
+    <SetCursorPositionActivity Timeout="35" Point="260,170" />
+    <SetCursorPositionActivity Timeout="35" Point="265,145" />
+    <SetCursorPositionActivity Timeout="35" Point="280,180" />
+    <SetCursorPositionActivity Timeout="35" Point="255,155" />
+    <SetCursorPositionActivity Timeout="35" Point="300,135" />
+    <SetCursorPositionActivity Timeout="35" Point="265,120" />
+  </ForTimeActivity>
+  <ClickActivity LocationName="GetKey2Point" Timeout="100" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="Shelf3Point" Timeout="201" />
+  <ClickActivity LocationName="GetBall4Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="Shelf2Point" Timeout="201" />
+  <ClickActivity LocationName="GetBall3Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="UnderShelfPoint" Timeout="201" />
+  <ClickActivity LocationName="GetBall2Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <SendKeysActivity Keys="{}{RIGHT}" Timeout="201" />
+  <ClickActivity LocationName="PCPoint" Timeout="202" />
+  <DelayActivity Timeout="100" />
+  <ClickActivity LocationName="Othello12Point" Timeout="98" />
+  <ClickActivity LocationName="Othello24Point" Timeout="98" />
+  <ClickActivity LocationName="Othello31Point" Timeout="98" />
+  <ClickActivity LocationName="Othello43Point" Timeout="98" />
+  <ClickActivity LocationName="GetCard2Point" Timeout="2500" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="DrawersPoint" Timeout="201" />
+  <ClickActivity LocationName="Drawer2Point" Timeout="201" />
+  <ClickActivity LocationName="GetBall1Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="ClockPoint" Timeout="201" />
+  <ClickActivity LocationName="GetBall7Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ForTimeActivity Duration="00:00:02.7">
+    <SendKeysActivity Keys="{}{RIGHT}" Timeout="10" />
+  </ForTimeActivity>
+  <ClickActivity LocationName="HangerPoint" Timeout="202" />
+  <ClickActivity LocationName="GetBall6Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="UnderSofaPoint" Timeout="201" />
+  <ClickActivity LocationName="GetBall5Point" Timeout="201" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <ClickActivity LocationName="BallLockPoint" Timeout="201" />
+  <DelayActivity Timeout="100" />
+
+  <ClickActivity LocationName="SetBall11Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall12Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall13Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall32Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall11Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall12Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall13Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall32Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+
+  <ClickActivity LocationName="SetBall11Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall21Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall31Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall41Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall33Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall11Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall21Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall31Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall41Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall33Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+
+  <ClickActivity LocationName="SetBall13Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall12Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall33Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall43Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall41Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall13Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall12Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall33Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall43Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall42Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall41Point" Timeout="98" />
+
+  <ClickActivity LocationName="SetBall21Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall31Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall12Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall22Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall32Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall24Point" Timeout="98" />
+  <ClickActivity LocationName="SetBall44Point" Timeout="98" />
+  <ClickActivity LocationName="SetCard2Point" Timeout="500" />
+  <ClickActivity LocationName="GetKey3Point" Timeout="1200" />
+  <ClickActivity LocationName="CloseItemButton" Timeout="603" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="201" />
+  <SendKeysActivity Keys="{}{LEFT}" Timeout="201" />
+  <ClickActivity LocationName="NumberLockPoint" Timeout="202" />
+  <ClickActivity LocationName="OpenNumberLockPoint" Timeout="201" />
+  <DelayActivity Timeout="100" />
+
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber9Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber3Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber1Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber1Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber0Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber0Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber1Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber9Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber4Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber1Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber9Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber1Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber4Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber0Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber0Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber8Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber6Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber6Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber6Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber3Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber7Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber5Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber6Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber4Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+  <ClickActivity LocationName="InputNumber3Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber9Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber4Point" Timeout="98" />
+  <DelayActivity Timeout="399" />
+  <ClickActivity LocationName="InputNumberCPoint" Timeout="98" />
+
+  <ClickActivity LocationName="InputNumber2Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber3Point" Timeout="98" />
+  <ClickActivity LocationName="InputNumber5Point" Timeout="98" />
+  <SendKeysActivity Keys="{}{DOWN}" Timeout="300" />
+  <ForTimeActivity Duration="00:00:03.1">
+    <SendKeysActivity Keys="{}{LEFT}" Timeout="10" />
+  </ForTimeActivity>
+  <ClickActivity LocationName="LeftDoorPoint" Timeout="120" />
+  <ClickActivity LocationName="GetOutPoint" Timeout="201" />
+</SequentialScreenWorkflow>

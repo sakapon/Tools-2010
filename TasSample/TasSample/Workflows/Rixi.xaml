@@ -1,0 +1,5 @@
+﻿<SequentialScreenWorkflow Name="rixi" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <ForCountActivity RepeatCount="100000">
+    <ClickActivity Timeout="2" />
+  </ForCountActivity>
+</SequentialScreenWorkflow>

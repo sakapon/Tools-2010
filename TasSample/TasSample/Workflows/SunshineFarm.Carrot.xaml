@@ -1,0 +1,53 @@
+﻿<SequentialScreenWorkflow Name="サンシャイン牧場" Uri="http://mixi.jp/run_appli.pl?id=7157"  BasePositionDescription="Flash コンポーネントの左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <!-- 基本座標 -->
+    <Location Name="HomeButton" Point="594,26" />
+    <Location Name="NormalModeButton" Point="303,524" />
+    <Location Name="ExterminationModeButton" Point="353,524" />
+    <Location Name="WateringModeButton" Point="403,524" />
+    <Location Name="HarvestingModeButton" Point="453,524" />
+    <Location Name="DiggingModeButton" Point="503,524" />
+    <Location Name="ShowItemsButton" Point="553,524" />
+    <Location Name="CarrotSeedPoint" Point="579,271" />
+    <!-- 配列座標 -->
+    <Location Name="Field01Point" Point="228,298" />
+    <Location Name="Field02Point" Point="387,311" />
+    <Location Name="Field03Point" Point="544,335" />
+    <Location Name="Field04Point" Point="125,353" />
+    <Location Name="Field05Point" Point="289,364" />
+    <Location Name="Field06Point" Point="432,395" />
+    <Location Name="Field07Point" Point="32,419" />
+    <Location Name="Field08Point" Point="213,427" />
+    <Location Name="Field09Point" Point="359,454" />
+    <Location Name="Field10Point" Point="512,463" />
+    <Location Name="Field11Point" Point="141,486" />
+    <Location Name="Field12Point" Point="62,546" />
+  </SequentialScreenWorkflow.Locations>
+  <ForCountActivity RepeatCount="3">
+    <ForCountActivity RepeatCount="3">
+      <ClickActivity LocationName="ShowItemsButton" Timeout="501" />
+      <ClickActivity LocationName="CarrotSeedPoint" Timeout="342" />
+      <ClickActivity LocationName="Field07Point" Timeout="501" />
+      <ClickActivity LocationName="Field08Point" Timeout="501" />
+      <ClickActivity LocationName="Field09Point" Timeout="501" />
+      <ClickActivity LocationName="Field10Point" Timeout="501" />
+      <ClickActivity LocationName="Field11Point" Timeout="501" />
+      <ClickActivity LocationName="Field12Point" Timeout="501" />
+      <ClickActivity LocationName="DiggingModeButton" Timeout="501" />
+      <ClickActivity LocationName="Field07Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+      <ClickActivity LocationName="Field08Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+      <ClickActivity LocationName="Field09Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+      <ClickActivity LocationName="Field10Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+      <ClickActivity LocationName="Field11Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+      <ClickActivity LocationName="Field12Point" Timeout="501" />
+      <SendKeysActivity Keys="{}{ENTER}" Timeout="342" />
+    </ForCountActivity>
+    <ClickActivity LocationName="HomeButton" Timeout="501" />
+    <DelayActivity Timeout="900" />
+  </ForCountActivity>
+</SequentialScreenWorkflow>

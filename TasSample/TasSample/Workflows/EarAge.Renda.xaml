@@ -1,0 +1,22 @@
+﻿<SequentialScreenWorkflow Name="聴力判定♪" Uri="http://mixi.jp/run_appli.pl?id=9467" BasePositionDescription="[メインページ] の左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <Location Name="StartButton" Point="-35,323" />
+    <Location Name="ChallengeButton" Point="-42,511" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity Timeout="0" LocationName="StartButton" />
+  <ForCountActivity RepeatCount="9">
+    <ClickActivity Timeout="9330" LocationName="StartButton" />
+  </ForCountActivity>
+
+  <ClickActivity Timeout="12300" LocationName="ChallengeButton" />
+  <ClickActivity Timeout="300" LocationName="StartButton" />
+  <ForCountActivity RepeatCount="9">
+    <ClickActivity Timeout="9330" LocationName="StartButton" />
+  </ForCountActivity>
+
+  <ClickActivity Timeout="12300" LocationName="ChallengeButton" />
+  <ClickActivity Timeout="300" LocationName="StartButton" />
+  <ForCountActivity RepeatCount="9">
+    <ClickActivity Timeout="9330" LocationName="StartButton" />
+  </ForCountActivity>
+</SequentialScreenWorkflow>

@@ -1,0 +1,3 @@
+﻿<ScreenWorkflowStartInfoCollection xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <ScreenWorkflowStartInfo Name="脱出ゲーム" FilePath="Workflows\GetOutGame.xaml" BasePosition="281,222" />
+</ScreenWorkflowStartInfoCollection>

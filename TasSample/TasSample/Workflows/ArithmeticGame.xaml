@@ -1,0 +1,58 @@
+﻿<SequentialScreenWorkflow Name="四則演算ゲーム" Uri="http://mixi.jp/run_appli.pl?id=6503"  BasePositionDescription="[四則演算ゲーム] タブの左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <!-- 基本座標 -->
+    <Location Name="NormalModeButton" Point="303,524" />
+    <Location Name="ExterminationModeButton" Point="353,524" />
+    <Location Name="WateringModeButton" Point="403,524" />
+    <Location Name="HarvestingModeButton" Point="453,524" />
+    <Location Name="DiggingModeButton" Point="503,524" />
+    <Location Name="ShowItemsButton" Point="553,524" />
+    <!-- 配列座標 -->
+    <Location Name="Field01Point" Point="233,292" />
+    <Location Name="Field02Point" Point="387,311" />
+    <Location Name="Field03Point" Point="544,335" />
+    <Location Name="Field04Point" Point="125,353" />
+    <Location Name="Field05Point" Point="289,364" />
+    <Location Name="Field06Point" Point="432,395" />
+    <Location Name="Field07Point" Point="32,419" />
+    <Location Name="Field08Point" Point="213,427" />
+    <Location Name="Field09Point" Point="359,454" />
+    <Location Name="Field10Point" Point="512,463" />
+    <Location Name="Field11Point" Point="141,486" />
+    <Location Name="Field12Point" Point="62,546" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="StartButton" Timeout="0" />
+  <DelayActivity Timeout="3600" />
+  <ForTimeActivity Duration="00:00:31">
+    <ClickActivity LocationName="LeftOperandPoint" Timeout="351" />
+    <SendKeysActivity Keys="^a" Timeout="300" />
+    <SendKeysActivity Keys="^c" Timeout="300" />
+    <ReadClipboardActivity Format="Text" Variable="LeftOperandText" />
+    <ClickActivity LocationName="ArithmeticOperatorPoint" Timeout="351" />
+    <SendKeysActivity Keys="^a" Timeout="300" />
+    <SendKeysActivity Keys="^c" Timeout="300" />
+    <ReadClipboardActivity Format="Text" Variable="ArithmeticOperator" />
+    <ClickActivity LocationName="ResultValuePoint" Timeout="351" />
+    <SendKeysActivity Keys="^a" Timeout="300" />
+    <SendKeysActivity Keys="^c" Timeout="300" />
+    <ReadClipboardActivity Format="Text" Variable="ResultValueText" />
+    <CastActivity ResultType="System.Int32" FromVariable="LeftOperandText" ToVariable="LeftOperand" />
+    <CastActivity ResultType="System.Int32" FromVariable="ResultValueText" ToVariable="ResultValue" />
+    <SwitchActivity TargetVariable="ArithmeticOperator">
+      <SwitchBranchActivity Value="+">
+        <ArithmeticActivity ResultVariable="RightOperand" LeftOperand="ResultValue" ArithmeticOperator="Subtract" RightOperand="LeftOperand" />
+      </SwitchBranchActivity>
+      <SwitchBranchActivity Value="－">
+        <ArithmeticActivity ResultVariable="RightOperand" LeftOperand="LeftOperand" ArithmeticOperator="Subtract" RightOperand="ResultValue" />
+      </SwitchBranchActivity>
+      <SwitchBranchActivity Value="x">
+        <ArithmeticActivity ResultVariable="RightOperand" LeftOperand="ResultValue" ArithmeticOperator="Divide" RightOperand="LeftOperand" />
+      </SwitchBranchActivity>
+      <SwitchBranchActivity Value="÷">
+        <ArithmeticActivity ResultVariable="RightOperand" LeftOperand="LeftOperand" ArithmeticOperator="Divide" RightOperand="ResultValue" />
+      </SwitchBranchActivity>
+    </SwitchActivity>
+    <CastActivity ResultType="System.String" FromVariable="RightOperand" ToVariable="RightOperandText" />
+    <SendKeysActivity Keys="RightOperandText" Timeout="300" />
+  </ForTimeActivity>
+</SequentialScreenWorkflow>

@@ -1,0 +1,30 @@
+﻿<SequentialScreenWorkflow Name="Whack-a-Mole" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <Location Name="StartButton" Point="420,268" />
+    <Location Name="Mole01" Point="40,249" />
+    <Location Name="Mole02" Point="74,93" />
+    <Location Name="Mole03" Point="119,57" />
+    <Location Name="Mole04" Point="119,207" />
+    <Location Name="Mole05" Point="155,126" />
+    <Location Name="Mole06" Point="173,271" />
+    <Location Name="Mole07" Point="220,85" />
+    <Location Name="Mole08" Point="248,292" />
+    <Location Name="Mole09" Point="257,214" />
+    <Location Name="Mole10" Point="306,78" />
+    <Location Name="Mole11" Point="316,253" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="StartButton" />
+  <ForTimeActivity Duration="00:00:31">
+    <ClickActivity Timeout="50" LocationName="Mole01" />
+    <ClickActivity Timeout="50" LocationName="Mole02" />
+    <ClickActivity Timeout="50" LocationName="Mole03" />
+    <ClickActivity Timeout="50" LocationName="Mole04" />
+    <ClickActivity Timeout="50" LocationName="Mole05" />
+    <ClickActivity Timeout="50" LocationName="Mole06" />
+    <ClickActivity Timeout="50" LocationName="Mole07" />
+    <ClickActivity Timeout="50" LocationName="Mole08" />
+    <ClickActivity Timeout="50" LocationName="Mole09" />
+    <ClickActivity Timeout="50" LocationName="Mole10" />
+    <ClickActivity Timeout="50" LocationName="Mole11" />
+  </ForTimeActivity>
+</SequentialScreenWorkflow>

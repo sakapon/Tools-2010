@@ -1,0 +1,32 @@
+﻿<SequentialScreenWorkflow Name="聖夜の脱出" Uri="http://mixi.jp/run_appli.pl?id=12166"  BasePositionDescription="Flash コンポーネントの左上" xmlns="http://schemas.saka-pon.net/uiAutoRun">
+  <SequentialScreenWorkflow.Locations>
+    <Location Name="Start" Point="324,309" />
+    <Location Name="ツリーの上" Point="54,80" />
+    <Location Name="コードをねじる" Point="228,232" />
+    <Location Name="ツリーの上から戻る" Point="410,346" />
+    <Location Name="ツリーのスイッチ" Point="126,267" />
+    <Location Name="引出し左４" Point="414,245" />
+    <Location Name="引出し左６" Point="414,290" />
+    <Location Name="引出し右２" Point="460,200" />
+    <Location Name="引出し右４" Point="460,245" />
+    <Location Name="引出しから戻る" Point="456,345" />
+    <Location Name="鍵" Point="287,221" />
+    <Location Name="扉" Point="253,186" />
+  </SequentialScreenWorkflow.Locations>
+  <ClickActivity LocationName="Start" Timeout="0" />
+  <ClickActivity LocationName="ツリーの上" Timeout="201" />
+  <ClickActivity LocationName="コードをねじる" Timeout="201" />
+  <ClickActivity LocationName="ツリーの上から戻る" Timeout="201" />
+  <ClickActivity LocationName="ツリーのスイッチ" Timeout="201" />
+  <ClickActivity LocationName="引出し左４" Timeout="201" />
+  <ClickActivity LocationName="引出しから戻る" Timeout="201" />
+  <ClickActivity LocationName="引出し右４" Timeout="201" />
+  <ClickActivity LocationName="引出しから戻る" Timeout="201" />
+  <ClickActivity LocationName="引出し右２" Timeout="201" />
+  <ClickActivity LocationName="引出しから戻る" Timeout="201" />
+  <ClickActivity LocationName="引出し左６" Timeout="201" />
+  <ClickActivity LocationName="鍵" Timeout="201" />
+  <ClickActivity LocationName="引出しから戻る" Timeout="201" />
+  <ClickActivity LocationName="扉" Timeout="201" />
+  <ClickActivity LocationName="扉" Timeout="602" />
+</SequentialScreenWorkflow>
