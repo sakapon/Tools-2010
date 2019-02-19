@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasSample", "TasSample\TasSample.csproj", "{7A2655B2-B014-4A98-AA7D-FC14846F0EB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasSample", "TasSample\TasSample.csproj", "{BB91D499-1BD8-42B8-A5DC-871E4A5B1EEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A2655B2-B014-4A98-AA7D-FC14846F0EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A2655B2-B014-4A98-AA7D-FC14846F0EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A2655B2-B014-4A98-AA7D-FC14846F0EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A2655B2-B014-4A98-AA7D-FC14846F0EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB91D499-1BD8-42B8-A5DC-871E4A5B1EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB91D499-1BD8-42B8-A5DC-871E4A5B1EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB91D499-1BD8-42B8-A5DC-871E4A5B1EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB91D499-1BD8-42B8-A5DC-871E4A5B1EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
